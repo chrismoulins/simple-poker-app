@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.css">
+    <title>Swept Dev Test</title>
+  </head>
+  <body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="hand-one">Hand One:</label>
+                <input class="col-3 poker-hand" name="hand-one" type="text" placeholder="enter a poker hand (e.g. AAA29)" maxlength="5" required pattern=".{5,5}" title='Input valid poker hand. Valid characters include: 2,3,4,5,6,7,8,9,T,J,Q,K,A,*'>
+                <span class="hand-one-type"></span>
+            </div>
+            <div class="form-group">
+                <label for="hand-two">Hand Two:</label>
+                <input class="col-3 poker-hand" name="hand-two" type="text" placeholder="enter a poker hand (e.g. KK243)" maxlength="5" required pattern=".{5,5}" title='Input valid poker hand. Valid characters include: 2,3,4,5,6,7,8,9,T,J,Q,K,A,*'>
+                <span class="hand-two-type"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Compare Hands</button>
+            </div>
+        </form>
+        <div class="row">
+            <p class="result"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/jasmine-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.8.0/boot.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script.test.js"></script>
+</body>
+</html>
